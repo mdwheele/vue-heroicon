@@ -1,24 +1,27 @@
-# icon
+# Vue Heroicons
 
-## Project setup
-```
-npm install
-```
+A simple component for loading Heroicons by [Adam Wathan](https://twitter.com/adamwathan) and [Steve Schoger](https://twitter.com/steveschoger).
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Check out https://heroicons.dev by [ZAYDEK](https://twitter.com/username_ZAYDEK) for a full library.
 
-### Compiles and minifies for production
+## Installation
 ```
-npm run build
+npm install vue-heroicon -D
 ```
 
-### Lints and fixes files
+### Usage
 ```
-npm run lint
-```
+<template>
+  <div>
+    <Icon name="md-annotation" class="w-6 h-6" />
+  </div>
+</template>
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+<script>
+import Icon from 'vue-heroicon'
+
+export default {
+  components: { Icon }
+}
+</script>
+```
