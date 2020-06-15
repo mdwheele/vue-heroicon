@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <Icon name="md-annotation" />
+    <div id="container">
+      <Icon name="thumb-up" outline />
+    </div>
   </div>
 </template>
 
@@ -12,3 +14,18 @@ export default {
   components: { Icon }
 }
 </script>
+
+<style scoped>
+#app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  width: 300px;
+  height: 300px;
+}
+</style>
