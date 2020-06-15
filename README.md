@@ -13,7 +13,8 @@ npm install vue-heroicon -D
 ```
 <template>
   <div>
-    <Icon name="md-annotation" class="w-6 h-6" />
+    <Icon name="annotation" solid class="w-6 h-6" />
+    <Icon name="annotation" outline class="w-6 h-6" />
   </div>
 </template>
 
