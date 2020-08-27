@@ -1,6 +1,6 @@
 {
   "name": "vue-heroicon",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A simple component for loading Heroicons",
   "homepage": "https://github.com/mdwheele/vue-heroicon",
   "main": "./dist/icon.common.js",

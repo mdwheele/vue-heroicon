@@ -2,7 +2,7 @@
 
 A simple component for loading Heroicons by [Adam Wathan](https://twitter.com/adamwathan) and [Steve Schoger](https://twitter.com/steveschoger).
 
-Check out https://heroicons.dev by [ZAYDEK](https://twitter.com/username_ZAYDEK) for a full library.
+Check out https://heroicons.com for a full library.
 
 ## Installation
 ```
