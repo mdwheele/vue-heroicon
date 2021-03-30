@@ -14,7 +14,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name icon ./src/components/index.js",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "prepublish": "cd bin && ./sync"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.4.4",
