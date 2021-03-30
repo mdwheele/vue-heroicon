@@ -1,0 +1,9 @@
+#!/bin/bash
+
+wget https://github.com/refactoringui/heroicons/archive/master.zip -O master.zip
+unzip master.zip
+rm -f master.zip
+rm -rf ../src/assets/*
+mv heroicons-master/optimized/solid ../src/assets/solid
+mv heroicons-master/optimized/outline ../src/assets/outline
+rm -rf heroicons-master
