@@ -1,5 +1,5 @@
 <template>
-  <component :is="component" />
+  <component v-show="component !== null" :is="component" />
 </template>
 
 <script>
