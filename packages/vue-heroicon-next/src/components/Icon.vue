@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import { ref, watchEffect } from 'vue'
+import { ref, computed, watchEffect } from 'vue'
 
 export default {
   name: 'Icon',
@@ -24,8 +24,18 @@ export default {
   setup(props) {
     const component = ref(null)
 
+    const style = computed(() => {
+      if (props.solid) {
+        return 'solid'
+      } else if (props.outline) {
+        return 'outline'
+      } else {
+        return 'solid'
+      }
+    })
+
     watchEffect(() => {
-      import(`../assets/outline/${props.name}.svg`).then(mod => component.value = mod.default)
+      import(`../assets/${style.value}/${props.name}.svg`).then(mod => component.value = mod.default)
     })
 
     return {
