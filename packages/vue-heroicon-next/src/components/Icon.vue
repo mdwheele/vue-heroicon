@@ -38,6 +38,7 @@ export default {
       import(`../assets/${style.value}/${props.name}.svg`).then(mod => component.value = mod.default)
     })
 
+
     return {
       component
     }
