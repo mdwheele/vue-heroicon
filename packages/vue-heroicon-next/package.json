@@ -4,10 +4,10 @@
   "files": [
     "dist"
   ],
-  "module": "./dist/vue-heroicon-next.es.js",
+  "module": "./dist/vue-heroicon-next.js",
   "exports": {
     ".": {
-      "import": "./dist/vue-heroicon-next.es.js"
+      "import": "./dist/vue-heroicon-next.js"
     }
   },
   "scripts": {
