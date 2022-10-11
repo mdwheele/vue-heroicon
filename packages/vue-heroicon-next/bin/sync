@@ -7,3 +7,5 @@ rm -rf ../src/assets/*
 mv heroicons-master/src/24/solid ../src/assets/solid
 mv heroicons-master/src/24/outline ../src/assets/outline
 rm -rf heroicons-master
+../node_modules/.bin/svgo -f ../src/assets/solid --config svgo.config.cjs
+../node_modules/.bin/svgo -f ../src/assets/outline --config svgo.config.cjs

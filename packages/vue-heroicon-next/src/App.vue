@@ -30,8 +30,8 @@ import Icon from './components/Icon.vue'
 }
 
 .icon {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
   margin: 10px;
 }
 </style>
