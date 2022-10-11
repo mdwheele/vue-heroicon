@@ -1,13 +1,14 @@
 {
   "name": "vue-heroicon-next",
   "version": "1.0.1",
-  "files": [
-    "dist"
-  ],
+  "type": "module",
+  "files": ["dist"],
+  "main": "./dist/vue-heroicon-next.umd.cjs",
   "module": "./dist/vue-heroicon-next.js",
   "exports": {
     ".": {
-      "import": "./dist/vue-heroicon-next.js"
+      "import": "./dist/vue-heroicon-next.js",
+      "require": "./dist/vue-heroicon-next.umd.cjs"
     }
   },
   "scripts": {
