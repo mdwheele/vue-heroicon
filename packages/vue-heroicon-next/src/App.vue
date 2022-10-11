@@ -1,23 +1,17 @@
 <template>
   <div id="app">
     <div id="container">
-      <Icon :name="up ? 'thumb-up' : 'thumb-down'" outline @click="up = !up" />
+      <Icon class="icon" name="bolt" outline />
+      <Icon class="icon" name="battery-0" outline />
+      <Icon class="icon" name="battery-50" outline />
+      <Icon class="icon" name="battery-100" outline />
+      <Icon class="icon" name="rocket-launch" outline />
     </div>
   </div>
 </template>
 
-<script>
+<script setup>
 import Icon from './components/Icon.vue'
-
-export default {
-  name: 'App',
-  components: { Icon },
-  data() {
-    return {
-      up: false
-    }
-  }
-}
 </script>
 
 <style scoped>
@@ -30,7 +24,14 @@ export default {
 }
 
 #container {
-  width: 300px;
-  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin: 10px;
 }
 </style>
