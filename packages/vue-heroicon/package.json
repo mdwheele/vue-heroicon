@@ -1,6 +1,6 @@
 {
   "name": "vue-heroicon",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "license": "MIT",
   "description": "A simple component for loading Heroicons",
   "homepage": "https://github.com/mdwheele/vue-heroicon",
