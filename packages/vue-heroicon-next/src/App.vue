@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div id="container">
-      <Icon class="icon" name="bolt" outline />
+      <Icon class="icon" :name="icon" outline @click="toggle" />
       <Icon class="icon" name="battery-0" outline />
       <Icon class="icon" name="battery-50" outline />
       <Icon class="icon" name="battery-100" outline />
@@ -11,7 +11,18 @@
 </template>
 
 <script setup>
+import { ref } from '@vue/reactivity'
 import Icon from './components/Icon.vue'
+
+const icon = ref('bolt')
+
+function toggle() {
+  if (icon.value === 'bolt') {
+    icon.value = 'rocket-launch'
+  } else {
+    icon.value = 'bolt'
+  }
+}
 </script>
 
 <style scoped>
@@ -29,15 +40,9 @@ import Icon from './components/Icon.vue'
   justify-content: center;
 }
 
-svg {
-  stroke: currentColor;
-}
-
 .icon {
   width: 32px;
   height: 32px;
   margin: 10px;
-
-  color: #ff0000;
 }
 </style>

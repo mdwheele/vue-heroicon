@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import { ref, computed, watchEffect } from 'vue'
+import { shallowRef, computed, watchEffect } from 'vue'
 
 export default {
   name: 'Icon',
@@ -22,7 +22,7 @@ export default {
   },
 
   setup(props) {
-    const component = ref(null)
+    const component = shallowRef(null)
 
     const style = computed(() => {
       if (props.solid) {
