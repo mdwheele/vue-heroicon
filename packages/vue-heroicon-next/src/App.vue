@@ -29,9 +29,15 @@ import Icon from './components/Icon.vue'
   justify-content: center;
 }
 
+svg {
+  stroke: currentColor;
+}
+
 .icon {
   width: 32px;
   height: 32px;
   margin: 10px;
+
+  color: #ff0000;
 }
 </style>
