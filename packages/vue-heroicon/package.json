@@ -18,9 +18,9 @@
     "prepublish": "cd bin && ./sync"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.4.4",
-    "@vue/cli-plugin-eslint": "^4.4.4",
-    "@vue/cli-service": "^4.4.4",
+    "@vue/cli-plugin-babel": "^5.0.8",
+    "@vue/cli-plugin-eslint": "^5.0.8",
+    "@vue/cli-service": "^5.0.8",
     "babel-eslint": "^10.1.0",
     "core-js": "^3.6.4",
     "eslint": "^6.7.2",
